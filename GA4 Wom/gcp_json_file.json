@@ -1,0 +1,56 @@
+{
+   "LogFile_Loc":"D:/PCH/PCH Dev Team/Prashant/GA4 Wom/logcheck/",
+   "email_sendmail":"/bin/mail",
+   "email_server":"smtp.theclearinghouse.com",
+   "email_from":"BigData_Dev@pch.com",
+   "email_to":"BigData_Dev@pch.com",
+   "retry":1,
+   "gs_loc":"gs://",
+   "property_id":"331273219",
+   "host_name": "maprsqldb.prod.pch.com",
+   "port":"3306",
+   "driver":"com.mysql.jdbc.Driver",
+   "pattern":"jdbc:mysql://",
+   "db_name":"mapr_bigdata_uat_metahub",
+   "usr":"u_bd_ms_mysql_svc",
+   "pwd":"S3ntr@L-st@shnU",
+   "service_account_loc" : "D:/PCH/PCH Dev Team/Prashant/GA4 Wom/service_id_json/ga_wom.json",
+   "Object_List":[
+      {
+         "minor":{
+            "sourceid":123,
+            "mapping_id" : 124,
+            "hdl_location": "D:/PCH/PCH Dev Team/Prashant/GA4 Wom/logcheck/",
+            "start_limit" : 8,
+            "end_limit" : 1
+         }
+      },
+      {
+         "major":{
+            "sourceid": 124,
+            "mapping_id" : 125,
+            "hdl_location": "D:/PCH/PCH Dev Team/Prashant/GA4 Wom/logcheck/",
+            "start_limit" : 8,
+            "end_limit" : 1
+         }
+      },
+      {
+         "overall":{
+            "sourceid": 125,
+            "mapping_id" : 126,
+            "hdl_location": "D:/PCH/PCH Dev Team/Prashant/GA4 Wom/logcheck/",
+            "start_limit" : 8,
+            "end_limit" : 1
+         }
+      },
+      {
+         "overall_sg":{
+            "sourceid": 126,
+            "mapping_id" : 127,
+            "hdl_location": "D:/PCH/PCH Dev Team/Prashant/GA4 Wom/logcheck/",
+            "start_limit" : 8,
+            "end_limit" : 1
+         }
+      }
+   ]
+}

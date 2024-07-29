@@ -1,0 +1,54 @@
+{
+   "LogFile_Loc":"/mapr/JMAPRCLUP01.CLASSIC.PCHAD.COM/staging_temp/bigdata/prod/test/thamo/python/ga4/file/ga4_log/",
+   "email_sendmail":"/bin/mail",
+   "email_server":"smtp.theclearinghouse.com",
+   "email_from":"BigData_Dev@pch.com",
+   "email_to":"BigData_Dev@pch.com",
+   "retry":1,
+   "property_id":"331273219",
+   "host_name": "maprsqldb.prod.pch.com",
+   "port":"3306",
+   "driver":"com.mysql.jdbc.Driver",
+   "pattern":"jdbc:mysql://",
+   "db_name":"mapr_bigdata_uat_metahub",
+   "usr":"u_bd_ms_mysql_svc",
+   "pwd":"S3ntr@L-st@shnU",
+   "service_account_loc" : "/mapr/JMAPRCLUP01.CLASSIC.PCHAD.COM/restricted/bigdata/prod/keystores/gcp/prod-ga4-wom-rpt/svc-prod-ga4-wom-rpt-c5c06cb656fd.json",
+   "Object_List":[
+      {
+         "major_monthly":{
+            "sourceid":127,
+            "mapping_id" : 128,
+            "hdl_location": "/mapr/JMAPRCLUP01.CLASSIC.PCHAD.COM/staging_temp/bigdata/prod/test/thamo/python/ga4/file_monthly/"
+         }
+      },
+      {
+         "minor_monthly":{
+            "sourceid": 128,
+            "mapping_id" : 129,
+            "hdl_location": "/mapr/JMAPRCLUP01.CLASSIC.PCHAD.COM/staging_temp/bigdata/prod/test/thamo/python/ga4/file_monthly/"
+         }
+      },
+      {
+         "overall_monthly":{
+            "sourceid": 129,
+            "mapping_id" : 130,
+            "hdl_location": "/mapr/JMAPRCLUP01.CLASSIC.PCHAD.COM/staging_temp/bigdata/prod/test/thamo/python/ga4/file_monthly/"
+         }
+      },
+      {
+         "overall_sg_monthly":{
+            "sourceid": 130,
+            "mapping_id" : 131,
+            "hdl_location": "/mapr/JMAPRCLUP01.CLASSIC.PCHAD.COM/staging_temp/bigdata/prod/test/thamo/python/ga4/file_monthly/"
+         }
+      },
+      {
+         "overall_sg_with_dvc_monthly":{
+            "sourceid": 131,
+            "mapping_id" : 132,
+            "hdl_location": "/mapr/JMAPRCLUP01.CLASSIC.PCHAD.COM/staging_temp/bigdata/prod/test/thamo/python/ga4/file_monthly/"
+         }
+      }
+   ]
+}
