@@ -1,0 +1,15 @@
+{
+    "gcp_airflow_configobjs_mapping":{
+        "airflow_control_flag": "",
+        "gcp_schema_initial": "", 
+        "gcp_schema_intermmediat": "",
+        "gcp_schema_final": "",
+        "gcp_partition_cols": "", 
+        "gcp_cluster_cols": "", 
+        "obj_gcs_path": "",
+        "obj_gcs_stg_to_final_split_fla": "",
+        "vw_sql_loc": ""
+    }
+}
+
+ 

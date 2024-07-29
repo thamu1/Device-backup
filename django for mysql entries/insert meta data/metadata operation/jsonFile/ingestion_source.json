@@ -1,0 +1,21 @@
+{
+    "ingestion_source": {
+        "classification_id":"",
+        "credential_id": "",
+        "data_type_id": "",
+        "sourcedb": "",
+        "tablebase": "",
+        "hdl_loadtype": "",
+        "hdl_subtype": "",
+        "frequency": "",
+        "idcolumn": "",
+        "datecolumn": "",
+        "columnlist": "",
+        "sa_db": "",
+        "satablename": "",
+        "serverip": "",
+        "status_flag": ""
+    }
+}
+
+

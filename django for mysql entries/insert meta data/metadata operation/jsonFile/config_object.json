@@ -1,0 +1,17 @@
+{
+    "config_object": {
+        "classification_id": "",
+        "subjectarea_id": "",
+        "data_type_id": "",
+        "object_name": "",
+        "datset_name": "",
+        "object_desc": "",
+        "loadtype": "",
+        "recon_start_limit": "",
+        "recon_end_limit": "",
+        "status_flag": "",
+        "bypass_recon_start_limit_hrly_loads": "",
+        "partition_flag": "",
+        "frequency": ""
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "gcp_airflow_scheduler":{
+        "status_flag": 1,
+        "exec_order": 0
+    }
+}
