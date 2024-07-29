@@ -1,0 +1,102 @@
+Davinci Resolve:
+
+ It is a movie editor.. most of the people editing the movie using this software only.
+ 
+ 
+1. learn basic
+	1. Conveying the massage of the video with more impact.
+
+	2. Visual story telling.
+		Texts
+		B-Rolls
+		Transitions
+		Effects
+		
+	3. Backgroud music & sound effects are on point
+	
+2. Build your portfolio
+
+	1. Practice is the reality
+	
+	2. Create portfolio and show it to people. (Website)
+	
+
+3. Choose software and Master it.
+
+	1. Davinci resolve, Premier Pro, final cut
+	
+	2. Make sure Save the template and Save time as much as you can.
+	
+
+4. Apply as much as possible 
+
+	1. Open an instagram account
+	
+	2. start posting edited reels
+	
+	3. post your edited video Before, after, timeline
+
+	4. https://ytjobs.co/
+	
+5. Upgrade and Upskill
+
+	1. Always learn new things.
+	
+	2. Apply your creativity.
+	
+	3. Upgrade your pc or laptop. 
+
+ 
+ 
+Menu:
+
+	1. Media
+	 drag and drop the media file
+	 and into the media tab
+	2. Master tab is important;
+		drag the media folder into Master div.
+		
+Cut tab:
+	
+	1. select the video in the cut tab.
+	2. move the pin click 
+		i - for  starting cut 
+		o - for end cut.
+		alt + / move the cutted video.
+	3. drag the cut video from the edit div to frame div.
+	
+Edit tab:
+	
+	1. create new timeline for seperating the video and audio.
+	(use timeling tab from menu)
+	2. enable the magnet and link button.
+	
+
+Inspector button:
+	
+	- use to adjust the audio video 
+	
+Transaction:
+	
+	- Effect library 
+	- it can apply for both audio and video.
+	- in audio its in db level  (0 db  -> 10 db)
+	
+Titles:
+	
+	- go to playback -> render cache -> select smart
+	- use inspector to edit the text.
+	
+Deliver:
+	
+	- 
+	
+Shortcuts:
+	
+	i : for  starting cut 
+	o : for end cut.
+	alt + / : move the cutted video.
+	ctrl+ + : zoom in timeline
+	ctrl+ - : zoom out timeline
+	shift+z : fit timeline
+	playback tab -> render cache -> select smart

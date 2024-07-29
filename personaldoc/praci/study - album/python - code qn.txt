@@ -1,0 +1,20 @@
+1. Prime or not
+2. peterson number
+3. Reverse a number => 9876 => 6789
+4. Automorphic Number Program => 23 -> 23 * 23 => 529 -> 29 != 23
+5. LCM - least common multiplication
+6. GCD - greatest common division
+7. Armstrong number\
+
+8. pattern 
+
+24-03-12
+	
+	- duplicate and unique char in a string.
+
+24-03-13
+
+	- max and min occuring char
+	- largest and smallest word
+	- find number of words
+        
