@@ -1,0 +1,37 @@
+S.No,Name,Description,Primarykey,SourceSystem,SourceLanding,Frequency,RefreshTime,AvgRecord,AvgDatasize,DataRetention,PartitionColumn,CluesteringColumn,Support,Status
+1,efforted_customer_tdmefcu,"HH-AGGR-CUST : HOUSEHOLD MEMBER AGGREGATE - CUSTOMER ID APPENDED. 
+This table is the re-creation of the Prospect TNBAGGC - HOUSEHOLD MEMBER AGGREGATE - CUST ID APPENDED table utilizing the TNBAGGR - HOUSEHOLD MEMBER AGGREGATE and the TNBXREF - HOUSEHOLD ID TO CUSTOMER ID XREF tables.","cust_part_seq_no, cust_id, lob_cd, effort_id, effort_type_cd, effort_dt",db2,hdl/sftp,daily/hourly,9am est hours,918911718,156.82,5 yrs on effort_dt,effort_dt,cust_id,BigData_Support@pch.com,Active
+2,efforted_customer_tdmcusu,"HH-AGGR-CUST : HOUSEHOLD MEMBER AGGREGATE - CUSTOMER ID APPENDED. 
+This table is the re-creation of the Prospect TNBAGGC - HOUSEHOLD MEMBER AGGREGATE - CUST ID APPENDED table utilizing the TNBAGGR - HOUSEHOLD MEMBER AGGREGATE and the TNBXREF - HOUSEHOLD ID TO CUSTOMER ID XREF tables.","cust_part_seq_no, cust_id, lob_cd, effort_id, ",db3,hdl/sftp,daily/hourly,5am est hours,918911,1544.82,6 yrs on effort_dt,effort_dt,cust_id,BigData_Support@pch.com,Active
+3,efforted_customer_tdmshfk,"RECORD-TYPE  : RECORD TYPE DESCRIPTION - TNBRTDS - DUPELIM RECORD TYPE DESCRIPTION
+During the Prospect Duplicates Elimination  (DUPELIM) process records for the same Prospect are labeled as Primary, Secondary, or Non Mail. 
+Additional records may be added to a list to ensure that identified Prospects are not overlooked for upcoming Marketing Mailing campaign - these records are be labeled as 
+""SECONDARY WITH PR-IN-MG"" Record Type code.
+
+Here are examples of possible Record Type Codes and their Descriptions: 
+{space}- Prospects merged after DUPE ELIM process, 
+P - PRIMARY RECORD                
+S - SECONDARY RECORD              
+X - NON MAIL RECORD               
+Z - SECONDARY WITH PR-IN-MG (SECONDARY WITH PRIMARY - IN - MATCH GROUP)","cust_part_seq_no, cust_id, lob_cd, effort_id,",db4,hdl/sftp,daily/hourly,4am est hours,9189718,1356.82,7 yrs on effort_dt,effort_dt,cust_id,BigData_Support@pch.com,Active
+4,efforted_customer_tdmadfr,"PROSPECT-NMS : PROSPECT NAMES - TNBPRNM - PROSPECT PRELIMINARY LIST
+All Prospect records that were processed and flagged for Marketing Mailing Campaign eligibility by the Duplicates Elimination process. 
+Additional Prospects may be merged into a Prospect Mailing after the Duplicates Elimination (DUPELIM) and prior to the DoNotMail (selection) process.","cust_part_seq_no, cust_id, ",db5,hdl/sftp,daily/hourly,2am est hours,91718,15416.82,8 yrs on effort_dt,effort_dt,cust_id,BigData_Support@pch.com,Active
+5,efforted_customer_tdmefcu,"HH-AGGR-CUST : HOUSEHOLD MEMBER AGGREGATE - CUSTOMER ID APPENDED. 
+This table is the re-creation of the Prospect TNBAGGC - HOUSEHOLD MEMBER AGGREGATE - CUST ID APPENDED table utilizing the TNBAGGR - HOUSEHOLD MEMBER AGGREGATE and the TNBXREF - HOUSEHOLD ID TO CUSTOMER ID XREF tables.","cust_part_seq_no, cust_id, lob_cd, effort_id, effort_type_cd, effort_dt",db2,hdl/sftp,daily/hourly,9am est hours,918911718,156.82,5 yrs on effort_dt,effort_dt,cust_id,BigData_Support@pch.com,Active
+6,efforted_customer_tdmcusu,"HH-AGGR-CUST : HOUSEHOLD MEMBER AGGREGATE - CUSTOMER ID APPENDED. 
+This table is the re-creation of the Prospect TNBAGGC - HOUSEHOLD MEMBER AGGREGATE - CUST ID APPENDED table utilizing the TNBAGGR - HOUSEHOLD MEMBER AGGREGATE and the TNBXREF - HOUSEHOLD ID TO CUSTOMER ID XREF tables.","cust_part_seq_no, cust_id, lob_cd, effort_id, ",db3,hdl/sftp,daily/hourly,5am est hours,918911,1544.82,6 yrs on effort_dt,effort_dt,cust_id,BigData_Support@pch.com,Active
+7,efforted_customer_tdmshfk,"RECORD-TYPE  : RECORD TYPE DESCRIPTION - TNBRTDS - DUPELIM RECORD TYPE DESCRIPTION
+During the Prospect Duplicates Elimination  (DUPELIM) process records for the same Prospect are labeled as Primary, Secondary, or Non Mail. 
+Additional records may be added to a list to ensure that identified Prospects are not overlooked for upcoming Marketing Mailing campaign - these records are be labeled as 
+""SECONDARY WITH PR-IN-MG"" Record Type code.
+
+Here are examples of possible Record Type Codes and their Descriptions: 
+{space}- Prospects merged after DUPE ELIM process, 
+P - PRIMARY RECORD                
+S - SECONDARY RECORD              
+X - NON MAIL RECORD               
+Z - SECONDARY WITH PR-IN-MG (SECONDARY WITH PRIMARY - IN - MATCH GROUP)","cust_part_seq_no, cust_id, lob_cd, effort_id,",db4,hdl/sftp,daily/hourly,4am est hours,9189718,1356.82,7 yrs on effort_dt,effort_dt,cust_id,BigData_Support@pch.com,Active
+8,efforted_customer_tdmadfr,"PROSPECT-NMS : PROSPECT NAMES - TNBPRNM - PROSPECT PRELIMINARY LIST
+All Prospect records that were processed and flagged for Marketing Mailing Campaign eligibility by the Duplicates Elimination process. 
+Additional Prospects may be merged into a Prospect Mailing after the Duplicates Elimination (DUPELIM) and prior to the DoNotMail (selection) process.","cust_part_seq_no, cust_id, ",db5,hdl/sftp,daily/hourly,2am est hours,91718,15416.82,8 yrs on effort_dt,effort_dt,cust_id,BigData_Support@pch.com,Active

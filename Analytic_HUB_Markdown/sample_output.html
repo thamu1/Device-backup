@@ -1,0 +1,421 @@
+<html>
+    <head>
+        <style>
+            table, tr, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+        <center><h2>Analytics Hub Subscription Info</h2></center>
+    </div>
+     <div id="topic_title">
+                    <table cellpadding="3px">
+                        <tr>
+                            <th>Subject Area   :</th>
+                            <td>DMS customer</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table cellpadding="3px">
+                        <tr>
+                            <th>Analytics Hub Source Dataset Name   :</th>
+                            <td>pgc_analytics_dms_customer</td>
+                        </tr>
+                    </table>
+                </div><br><div>
+                <table cellpadding="3px">
+                <tr>
+                    <th>ID</th>
+                    <th>Details</th>
+                </tr><tr>
+                    <td>1</td>
+                    <td>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th>Name</th>
+                                <td>efforted_customer_tdmefcu</td>
+                            </tr>
+                            <tr>
+                                <th>PrimaryKey</th>
+                                <td>cust_part_seq_no, cust_id, lob_cd, effort_id, effort_type_cd, effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Hh-aggr-cust : household member aggregate - customer id appended. this table is the re-creation of the prospect tnbaggc - household member aggregate - cust id appended table utilizing the tnbaggr - household member aggregate and the tnbxref - household id to customer id xref tables.</td>
+                            </tr>
+                        </table>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th bgcolor= "#E0FFFF">SourceSystem</th>
+                                <td>db2</td>
+                                <th bgcolor= "#E0FFFF">SourceLanding</th>
+                                <td>hdl/sftp</td>
+                                <th bgcolor= "#E0FFFF">Frequency</th>
+                                <td>daily/hourly</td>
+                                <th bgcolor= "#E0FFFF">RefreshTime</th>
+                                <td>9am est hours</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">AvgRecordVolume</th>
+                                <td>918911718</td>
+                                <th bgcolor= "#E0FFFF">AvgDataSize</th>
+                                <td>156.82</td>
+                                <th bgcolor= "#E0FFFF">DataRetention</th>
+                                <td>5 yrs on effort_dt</td>
+                                <th bgcolor= "#E0FFFF">PartitionColumn</th>
+                                <td>effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">ClusteringColumn</th>
+                                <td>cust_id</td>
+                                <th bgcolor= "#E0FFFF">Support</th>
+                                <td>BigData_Support@pch.com</td>
+                                <th bgcolor= "#E0FFFF">Status</th>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th>Name</th>
+                                <td>efforted_customer_tdmcusu</td>
+                            </tr>
+                            <tr>
+                                <th>PrimaryKey</th>
+                                <td>cust_part_seq_no, cust_id, lob_cd, effort_id, </td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Hh-aggr-cust : household member aggregate - customer id appended. this table is the re-creation of the prospect tnbaggc - household member aggregate - cust id appended table utilizing the tnbaggr - household member aggregate and the tnbxref - household id to customer id xref tables.</td>
+                            </tr>
+                        </table>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th bgcolor= "#E0FFFF">SourceSystem</th>
+                                <td>db3</td>
+                                <th bgcolor= "#E0FFFF">SourceLanding</th>
+                                <td>hdl/sftp</td>
+                                <th bgcolor= "#E0FFFF">Frequency</th>
+                                <td>daily/hourly</td>
+                                <th bgcolor= "#E0FFFF">RefreshTime</th>
+                                <td>5am est hours</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">AvgRecordVolume</th>
+                                <td>918911</td>
+                                <th bgcolor= "#E0FFFF">AvgDataSize</th>
+                                <td>1544.82</td>
+                                <th bgcolor= "#E0FFFF">DataRetention</th>
+                                <td>6 yrs on effort_dt</td>
+                                <th bgcolor= "#E0FFFF">PartitionColumn</th>
+                                <td>effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">ClusteringColumn</th>
+                                <td>cust_id</td>
+                                <th bgcolor= "#E0FFFF">Support</th>
+                                <td>BigData_Support@pch.com</td>
+                                <th bgcolor= "#E0FFFF">Status</th>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><tr>
+                    <td>3</td>
+                    <td>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th>Name</th>
+                                <td>efforted_customer_tdmshfk</td>
+                            </tr>
+                            <tr>
+                                <th>PrimaryKey</th>
+                                <td>cust_part_seq_no, cust_id, lob_cd, effort_id,</td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Record-type  : record type description - tnbrtds - dupelim record type descriptionduring the prospect duplicates elimination  (dupelim) process records for the same prospect are labeled as primary, secondary, or non mail. additional records may be added to a list to ensure that identified prospects are not overlooked for upcoming marketing mailing campaign - these records are be labeled as "secondary with pr-in-mg" record type code.here are examples of possible record type codes and their descriptions: {space}- prospects merged after dupe elim process, p - primary record                s - secondary record              x - non mail record               z - secondary with pr-in-mg (secondary with primary - in - match group)</td>
+                            </tr>
+                        </table>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th bgcolor= "#E0FFFF">SourceSystem</th>
+                                <td>db4</td>
+                                <th bgcolor= "#E0FFFF">SourceLanding</th>
+                                <td>hdl/sftp</td>
+                                <th bgcolor= "#E0FFFF">Frequency</th>
+                                <td>daily/hourly</td>
+                                <th bgcolor= "#E0FFFF">RefreshTime</th>
+                                <td>4am est hours</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">AvgRecordVolume</th>
+                                <td>9189718</td>
+                                <th bgcolor= "#E0FFFF">AvgDataSize</th>
+                                <td>1356.82</td>
+                                <th bgcolor= "#E0FFFF">DataRetention</th>
+                                <td>7 yrs on effort_dt</td>
+                                <th bgcolor= "#E0FFFF">PartitionColumn</th>
+                                <td>effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">ClusteringColumn</th>
+                                <td>cust_id</td>
+                                <th bgcolor= "#E0FFFF">Support</th>
+                                <td>BigData_Support@pch.com</td>
+                                <th bgcolor= "#E0FFFF">Status</th>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><tr>
+                    <td>4</td>
+                    <td>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th>Name</th>
+                                <td>efforted_customer_tdmadfr</td>
+                            </tr>
+                            <tr>
+                                <th>PrimaryKey</th>
+                                <td>cust_part_seq_no, cust_id, </td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Prospect-nms : prospect names - tnbprnm - prospect preliminary listall prospect records that were processed and flagged for marketing mailing campaign eligibility by the duplicates elimination process. additional prospects may be merged into a prospect mailing after the duplicates elimination (dupelim) and prior to the donotmail (selection) process.</td>
+                            </tr>
+                        </table>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th bgcolor= "#E0FFFF">SourceSystem</th>
+                                <td>db5</td>
+                                <th bgcolor= "#E0FFFF">SourceLanding</th>
+                                <td>hdl/sftp</td>
+                                <th bgcolor= "#E0FFFF">Frequency</th>
+                                <td>daily/hourly</td>
+                                <th bgcolor= "#E0FFFF">RefreshTime</th>
+                                <td>2am est hours</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">AvgRecordVolume</th>
+                                <td>91718</td>
+                                <th bgcolor= "#E0FFFF">AvgDataSize</th>
+                                <td>15416.82</td>
+                                <th bgcolor= "#E0FFFF">DataRetention</th>
+                                <td>8 yrs on effort_dt</td>
+                                <th bgcolor= "#E0FFFF">PartitionColumn</th>
+                                <td>effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">ClusteringColumn</th>
+                                <td>cust_id</td>
+                                <th bgcolor= "#E0FFFF">Support</th>
+                                <td>BigData_Support@pch.com</td>
+                                <th bgcolor= "#E0FFFF">Status</th>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><tr>
+                    <td>5</td>
+                    <td>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th>Name</th>
+                                <td>efforted_customer_tdmefcu</td>
+                            </tr>
+                            <tr>
+                                <th>PrimaryKey</th>
+                                <td>cust_part_seq_no, cust_id, lob_cd, effort_id, effort_type_cd, effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Hh-aggr-cust : household member aggregate - customer id appended. this table is the re-creation of the prospect tnbaggc - household member aggregate - cust id appended table utilizing the tnbaggr - household member aggregate and the tnbxref - household id to customer id xref tables.</td>
+                            </tr>
+                        </table>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th bgcolor= "#E0FFFF">SourceSystem</th>
+                                <td>db2</td>
+                                <th bgcolor= "#E0FFFF">SourceLanding</th>
+                                <td>hdl/sftp</td>
+                                <th bgcolor= "#E0FFFF">Frequency</th>
+                                <td>daily/hourly</td>
+                                <th bgcolor= "#E0FFFF">RefreshTime</th>
+                                <td>9am est hours</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">AvgRecordVolume</th>
+                                <td>918911718</td>
+                                <th bgcolor= "#E0FFFF">AvgDataSize</th>
+                                <td>156.82</td>
+                                <th bgcolor= "#E0FFFF">DataRetention</th>
+                                <td>5 yrs on effort_dt</td>
+                                <th bgcolor= "#E0FFFF">PartitionColumn</th>
+                                <td>effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">ClusteringColumn</th>
+                                <td>cust_id</td>
+                                <th bgcolor= "#E0FFFF">Support</th>
+                                <td>BigData_Support@pch.com</td>
+                                <th bgcolor= "#E0FFFF">Status</th>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><tr>
+                    <td>6</td>
+                    <td>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th>Name</th>
+                                <td>efforted_customer_tdmcusu</td>
+                            </tr>
+                            <tr>
+                                <th>PrimaryKey</th>
+                                <td>cust_part_seq_no, cust_id, lob_cd, effort_id, </td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Hh-aggr-cust : household member aggregate - customer id appended. this table is the re-creation of the prospect tnbaggc - household member aggregate - cust id appended table utilizing the tnbaggr - household member aggregate and the tnbxref - household id to customer id xref tables.</td>
+                            </tr>
+                        </table>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th bgcolor= "#E0FFFF">SourceSystem</th>
+                                <td>db3</td>
+                                <th bgcolor= "#E0FFFF">SourceLanding</th>
+                                <td>hdl/sftp</td>
+                                <th bgcolor= "#E0FFFF">Frequency</th>
+                                <td>daily/hourly</td>
+                                <th bgcolor= "#E0FFFF">RefreshTime</th>
+                                <td>5am est hours</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">AvgRecordVolume</th>
+                                <td>918911</td>
+                                <th bgcolor= "#E0FFFF">AvgDataSize</th>
+                                <td>1544.82</td>
+                                <th bgcolor= "#E0FFFF">DataRetention</th>
+                                <td>6 yrs on effort_dt</td>
+                                <th bgcolor= "#E0FFFF">PartitionColumn</th>
+                                <td>effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">ClusteringColumn</th>
+                                <td>cust_id</td>
+                                <th bgcolor= "#E0FFFF">Support</th>
+                                <td>BigData_Support@pch.com</td>
+                                <th bgcolor= "#E0FFFF">Status</th>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><tr>
+                    <td>7</td>
+                    <td>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th>Name</th>
+                                <td>efforted_customer_tdmshfk</td>
+                            </tr>
+                            <tr>
+                                <th>PrimaryKey</th>
+                                <td>cust_part_seq_no, cust_id, lob_cd, effort_id,</td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Record-type  : record type description - tnbrtds - dupelim record type descriptionduring the prospect duplicates elimination  (dupelim) process records for the same prospect are labeled as primary, secondary, or non mail. additional records may be added to a list to ensure that identified prospects are not overlooked for upcoming marketing mailing campaign - these records are be labeled as "secondary with pr-in-mg" record type code.here are examples of possible record type codes and their descriptions: {space}- prospects merged after dupe elim process, p - primary record                s - secondary record              x - non mail record               z - secondary with pr-in-mg (secondary with primary - in - match group)</td>
+                            </tr>
+                        </table>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th bgcolor= "#E0FFFF">SourceSystem</th>
+                                <td>db4</td>
+                                <th bgcolor= "#E0FFFF">SourceLanding</th>
+                                <td>hdl/sftp</td>
+                                <th bgcolor= "#E0FFFF">Frequency</th>
+                                <td>daily/hourly</td>
+                                <th bgcolor= "#E0FFFF">RefreshTime</th>
+                                <td>4am est hours</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">AvgRecordVolume</th>
+                                <td>9189718</td>
+                                <th bgcolor= "#E0FFFF">AvgDataSize</th>
+                                <td>1356.82</td>
+                                <th bgcolor= "#E0FFFF">DataRetention</th>
+                                <td>7 yrs on effort_dt</td>
+                                <th bgcolor= "#E0FFFF">PartitionColumn</th>
+                                <td>effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">ClusteringColumn</th>
+                                <td>cust_id</td>
+                                <th bgcolor= "#E0FFFF">Support</th>
+                                <td>BigData_Support@pch.com</td>
+                                <th bgcolor= "#E0FFFF">Status</th>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><tr>
+                    <td>8</td>
+                    <td>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th>Name</th>
+                                <td>efforted_customer_tdmadfr</td>
+                            </tr>
+                            <tr>
+                                <th>PrimaryKey</th>
+                                <td>cust_part_seq_no, cust_id, </td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>Prospect-nms : prospect names - tnbprnm - prospect preliminary listall prospect records that were processed and flagged for marketing mailing campaign eligibility by the duplicates elimination process. additional prospects may be merged into a prospect mailing after the duplicates elimination (dupelim) and prior to the donotmail (selection) process.</td>
+                            </tr>
+                        </table>
+                        <table cellpadding="3px">
+                            <tr>
+                                <th bgcolor= "#E0FFFF">SourceSystem</th>
+                                <td>db5</td>
+                                <th bgcolor= "#E0FFFF">SourceLanding</th>
+                                <td>hdl/sftp</td>
+                                <th bgcolor= "#E0FFFF">Frequency</th>
+                                <td>daily/hourly</td>
+                                <th bgcolor= "#E0FFFF">RefreshTime</th>
+                                <td>2am est hours</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">AvgRecordVolume</th>
+                                <td>91718</td>
+                                <th bgcolor= "#E0FFFF">AvgDataSize</th>
+                                <td>15416.82</td>
+                                <th bgcolor= "#E0FFFF">DataRetention</th>
+                                <td>8 yrs on effort_dt</td>
+                                <th bgcolor= "#E0FFFF">PartitionColumn</th>
+                                <td>effort_dt</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor= "#E0FFFF">ClusteringColumn</th>
+                                <td>cust_id</td>
+                                <th bgcolor= "#E0FFFF">Support</th>
+                                <td>BigData_Support@pch.com</td>
+                                <th bgcolor= "#E0FFFF">Status</th>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr></table>
+                </div> 
+        </body>
+    </html>
+    
