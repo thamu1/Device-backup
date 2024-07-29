@@ -1,0 +1,67 @@
+bq mk --table pchtask1.trip_1
+
+bq mk --table pchtask1.all_trips trip_id:string,timestamp:string,fuel_usage:string
+-- insert into this table for loop
+
+
+LOAD DATA OVERWRITE pchtask1.trip_1
+FROM FILES (
+  format = 'CSV',
+  uris = ['gs://pchtask-1/trip_1.csv']);
+
+
+
+LOAD DATA OVERWRITE pchtask1.trips
+FROM FILES (
+  format = 'CSV',
+  uris = ['gs://pchtask-1/trips.csv']);
+
+
+
+LOAD DATA OVERWRITE pchtask1.truck
+FROM FILES (
+  format = 'CSV',
+  uris = ['gs://pchtask-1/trucks.csv']);
+
+
+create table pchtask1.all_trips as
+(select trip_id , timestamp , fuel_level from pchtask1.trip_1 union all
+select trip_id , timestamp , fuel_level from pchtask1.trip_2 union all
+select trip_id , timestamp , fuel_level from pchtask1.trip_3 union all
+select trip_id , timestamp , fuel_level from pchtask1.trip_4 union all
+select trip_id , timestamp , fuel_level from pchtask1.trip_5 union all
+select trip_id , timestamp , fuel_level from pchtask1.trip_6 union all
+select trip_id , timestamp , fuel_level from pchtask1.trip_7 union all
+select trip_id , timestamp , fuel_level from pchtask1.trip_8 union all
+select trip_id , timestamp , fuel_level from pchtask1.trip_9 
+)
+
+		or
+
+insert into pchtask2.all_trips values(select trip_id,timestamp,fuel_usage from pchtask2.trip_{i})
+
+
+
+select * from pchtask1.all_trips order by trip_id ;
+
+
+
+select PARSE_TIMESTAMP("%m/%e/%G %H:%M", '3/28/2022 10:32') as timecol;
+SELECT PARSE_TIMESTAMP("%m/%e/%G %H:%M", timestamp) from pchtask1.all_trips;
+
+
+select t.trip_id ,ts.string_field_0,tc.string_field_1, sum(t.usages) over(partition by ts.string_field_0) as per_truck
+ , sum(t.usages) over(partition by tc.string_field_1) as per_company
+from (select alt.trip_id,max(alt.fuel_level) - min(alt.fuel_level) as usages 
+from pchtask1.all_trips as alt group by alt.trip_id) as t 
+join pchtask1.trips as ts on t.trip_id=ts.string_field_1 
+join pchtask1.truck as tc on tc.string_field_0 = ts.string_field_0 ; 
+
+
+
+
+
+
+
+
+
