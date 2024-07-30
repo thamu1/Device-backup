@@ -1,0 +1,85 @@
+SQL Tips:
+
+Variables:
+	SELECT  @msrp:=MAX(msrp) FROM products;
+
+	SELECT productCode, productName, productLine, msrp
+	FROM products
+	WHERE msrp = @msrp;
+	
+	(or)
+	
+	select MAX(msrp) into @msrp FROM products;
+	
+	SELECT productCode, productName, productLine, msrp
+	FROM products
+	WHERE msrp = @msrp;
+	
+Compare successive row with in the same table:
+
+	SELECT g1.item_no, g1.counted_date from_date,
+		g2.counted_date to_date, (g2.qty - g1.qty) AS receipt_qty
+	FROM inventory g1
+	INNER JOIN inventory g2 ON g2.id = g1.id + 1
+	WHERE g1.item_no = 'A';
+	
+row number generate:
+
+	SET @row_number = 0; 
+	SELECT 
+		(@row_number:=@row_number + 1) AS num, 
+		firstName, lastName
+	FROM employees
+	ORDER BY firstName, lastName LIMIT 5;
+	
+	
+Generate random :
+
+	SELECT * FROM table_name ORDER BY RAND() LIMIT 1;
+
+get nth greatest value:
+
+	SELECT 
+		productCode, productName, buyPrice
+	FROM
+		products
+	ORDER BY buyPrice DESC
+	LIMIT 1 , 1;
+	
+Delete duplicate value:
+	DELETE t1 FROM contacts t1
+	INNER JOIN contacts t2 
+	WHERE 
+		t1.id < t2.id AND 
+		t1.email = t2.email;
+		
+Find count between two object: (b a a b)
+	select *
+	from (
+	select *,
+	case when predate<> prebytype 
+		then (select rnk from 
+			(select id,rnk,ordate from 
+				(select acid,id, rnk, ordate 
+					from vw_coun where type = t1.type and acid = t1.acid and ordate < t1.ordate
+					group by acid,id,ordate ) as st1
+					) as st2 )
+		else 0
+		end as re1
+	from( select * from vw_coun)t1
+	) t2
+	
+Group_concat Sorting:
+
+	SELECT email_domain, 
+	array_to_string(ARRAY_AGG(global_member_token ORDER BY global_member_token),',') AS gmt
+	FROM `dev-gold-core.it_online_auxiliary.gmt_attributes`
+	GROUP BY email_domain limit 10;
+	
+Update string column into datetime:
+
+	SET SQL_SAFE_UPDATES = 1;
+	
+	update world.order set ship_date = 
+	DATE_FORMAT(STR_TO_DATE(shipping_limit_date, '%d-%m-%Y %H.%i'), 
+	'%Y-%m-%d') ;
