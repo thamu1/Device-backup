@@ -1,0 +1,80 @@
+Project explanation:
+
+
+First project:
+--------------
+
+Worked on the ecommerce and Gaming data:
+
+Huge amount of data generated frequently. It has stored in different storage layer like
+Mysql, Mssql, HDFS, DB2
+
+In this process we used different technologies like :
+
+    =>  Python, SQL, Shell scripting, Spark, Hive, Airflow, GCS, Bigquery, Composer
+
+    1. Using Spark JDBC connection and Spark-GCP connector (gcp credential json)
+        we Migrated the data from various source to Google Cloud Storage.
+    2. then we are reading that GCS data from BigQuery as an external table.
+    3. on top of that external table we are creating view with DG standards.
+    4. Next Applying some transformations and join on that data then we moved to STG layer for unit test.
+        Then we are moving the stg data to Final layer. 
+    5. For scheduling the process We used Airflow Orchestration.
+
+Coming to Full load and Incremental load
+
+We have decided based on the Flag. 
+
+Full load: 
+    1. Fetch all the recored from source table process
+    Follow the process.
+
+Incremental Load:
+    1. we used to log the max of the today data into logging table
+    2. From the max it will st the new refresh.
+
+
+cron schedule -> Wrapper script ->  spark-submit (ingestion) -> if success -> run compute (airflow)
+
+
+
+Current Project:
+----------------
+
+I am working on the Medical related data.
+
+For this we used : Python, SQL, Pyspark, DataBricks, ADLS, Azure Data Factory
+
+1. The raw data stored into Azure Data Lake storage
+2. from data bricks we read the ADLS data using azure ADLS conntion URL as External Table.
+3. Appling some transformations as per the business requirement.
+4. Moving to STG layer, on top of this we are appling DG standards.
+5. Moving this data to EDH layer.
+6. Next On top of that EDH layer appling some Aggregation and moved to BSL (Business Symentic Layer) for Analytic purpose.
+
+But in this project we are just doing the business requirement changes.
+
+
+ADLs -> Data Bricks Notebook -> ADF Orchestration
+
+
+altermetric - sai priya.
+
+
+gurinji
+con-care
+
+
+Comcast : spark, scala, pyspark, sql, python, datawarehouse.
+
+
+I am writing to sincerely apologize for my past actions, and I deeply regret any inconvenience and mistrust they may have caused.
+
+I acknowledge the importance of following proper procedures and maintaining integrity in all aspects of my work. Moving forward, I am committed to:
+Consulting with HR and appropriate channels when facing challenges.
+Adhering strictly to all company policies and protocols.
+Seeking guidance and feedback to ensure alignment with our organizational values.
+
+
+username:  .\ingeniero
+password:    %m};(!2X-1+SR9
