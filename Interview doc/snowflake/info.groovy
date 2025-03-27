@@ -174,7 +174,8 @@ Creating External Storage:
         - AWS take : 
             . storage_aws_iam_user_arn value
             . storage_aws_external_id
-            . Edit aws trust relationship
+            . Edit aws trust relationship - Copy paste the Entire Json to AWS trust policy.
+                - https://docs.snowflake.com/en/user-guide/data-load-s3-config-storage-integration
         
         - Azure take:
             . azure_consent_url -> allow permission by taking url
