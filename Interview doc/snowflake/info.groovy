@@ -165,7 +165,7 @@ Creating External Storage:
         type = external_stage
         storage_provider = s3
         enabled = true
-        storage_aws_role_arn = "arn.aws.iam::<>:role/<>" # get it from aws iam service.
+        storage_aws_role_arn = "arn.aws.iam::<>:role/<>" # get it from aws iam <ROLE> service.
         // AZURE_TENANT_ID = '<GET IT from azure active directory>'
         storage_allowed_locations = ("s3://<bucket-path>", "extra") // ('azure://<service-account>.blob.core.windows.net/<container-name>/')
 
@@ -174,7 +174,7 @@ Creating External Storage:
         - AWS take : 
             . storage_aws_iam_user_arn value
             . storage_aws_external_id
-            . Edit aws trust relationship - Copy paste the Entire Json to AWS trust policy.
+            . Edit aws trust relationship - Copy paste the Entire config Json to AWS trust policy.
                 - https://docs.snowflake.com/en/user-guide/data-load-s3-config-storage-integration
         
         - Azure take:
@@ -219,7 +219,8 @@ Creating External Storage:
         copy into <table-name>
         from (
             select 
-            $1:<col-name> :: <varchar(datatype)>
+              $1:<col-name> :: <varchar(datatype)>
+            , $1:<col-name> :: <varchar(datatype)>
             , $1:<col-name> :: <varchar(datatype)>
             // METADATA$FILENAME // For getting file name
             // METADATA$FILE_ROW_NUMBER // getting row number
