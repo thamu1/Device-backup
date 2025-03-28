@@ -41,12 +41,15 @@ Architecture:
 
 <img width="545" alt="image" src="https://github.com/user-attachments/assets/372bf295-e3c2-40fa-9338-84384e8d903d" />
 
+<img width="952" alt="image" src="https://github.com/user-attachments/assets/ad527a43-955f-437f-a85f-e50f495df751" />
+
+
 Data Model:
 -----------
   - Presto adapt three layer table structure
   - <catalog>.<schema>.<table>
 
-![Uploading {66D9FB8A-0594-4AE6-8DBE-46E133DB0430}.png…]()
+
 
 
 
