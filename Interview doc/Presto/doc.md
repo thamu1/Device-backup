@@ -19,12 +19,18 @@ Presto:
     . Aggregate data from all Coordinators and worker.
   - **flow:**
     Client -> Work -> Coordinator -> Optimized query -> Worker -> Fetch data from Connector -> Processing the data -> Result -> Coordinator fetch result from Worker -> result to client.
-
+  - **Components:**
+    . Connectors: Driver for data sources. Ex: HDFS, S3, MySQL, Kafka, etc
+    . Catalog: Contains schema from a data source specified by the connector.
+    . Schemas: Namespace to organize tables
+    . Set of unordered rows organized into columns with types.
+    
 Features:
 ---------
   - Distributed SQL query engine.
   - Massively Parallel Processing(MPP)
   - In-memory processing.
+  - Multi level caching with RaptorX.
   - Extensible: Support various data sources using connectors.
   - Compute and Storage are seperated.
   - Data source abstraction: Query data where it reside.
@@ -41,6 +47,10 @@ Data Model:
   - <catalog>.<schema>.<table>
 
 ![Uploading {66D9FB8A-0594-4AE6-8DBE-46E133DB0430}.png…]()
+
+
+
+
 
 
 
