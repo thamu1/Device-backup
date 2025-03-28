@@ -33,7 +33,7 @@ Features:
   - Multi level caching with RaptorX.
   - Extensible: Support various data sources using connectors.
   - Compute and Storage are seperated.
-  - Data source abstraction: Query data where it reside.
+  - Data source abstraction or Federate queries: Query data where it lives. ex: data lake, Lakehouse and more.
   - Scalable, Low Latency.
 
 Architecture:
