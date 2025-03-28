@@ -27,6 +27,12 @@ Features:
   - Data source abstraction: Query data where it reside.
   - Scalable, Low Latency.
 
+Architecture:
+-------------
+
+<img width="545" alt="image" src="https://github.com/user-attachments/assets/372bf295-e3c2-40fa-9338-84384e8d903d" />
+
+
 
     
   
