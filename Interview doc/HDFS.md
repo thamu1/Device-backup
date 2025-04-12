@@ -45,9 +45,9 @@ Types of File system:
       . Decentralized, All node have equal status and interact with each others.
       . Ex: Cassandra
 
-      . ![image](https://github.com/user-attachments/assets/56f5e134-82a4-4d50-8671-b65a34878f21)
+      ![image](https://github.com/user-attachments/assets/56f5e134-82a4-4d50-8671-b65a34878f21)
 
-      . <img width="502" alt="image" src="https://github.com/user-attachments/assets/ab978250-5028-4490-8a57-021d12b6c82b" />
+      <img width="502" alt="image" src="https://github.com/user-attachments/assets/ab978250-5028-4490-8a57-021d12b6c82b" />
 
 
 
