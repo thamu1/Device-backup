@@ -44,8 +44,11 @@ Types of Distributed System:
     - Peer to Peer(P2P) : 
       . Decentralized, All node have equal status and interact with each others.
       . Ex: Cassandra
+      
   ![image](https://github.com/user-attachments/assets/cf40d8f1-8785-448b-9b99-541364e862dd)
   ![image](https://github.com/user-attachments/assets/3dfc50d1-1914-491e-8668-df1f8714f1d5)
+
+
 
 
 
