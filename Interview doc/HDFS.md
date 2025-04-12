@@ -48,6 +48,37 @@ Types of Distributed System:
   ![image](https://github.com/user-attachments/assets/cf40d8f1-8785-448b-9b99-541364e862dd)
   ![image](https://github.com/user-attachments/assets/3dfc50d1-1914-491e-8668-df1f8714f1d5)
 
+Cluster and Node: 
+-----------------
+  - Node: single Machine (eg: Laptop, Desktop, VM)
+  - Group of Nodes connected with each other.
+
+Hadoop Architecture:
+--------------------
+  ![image](https://github.com/user-attachments/assets/25fd964f-3494-4c7e-b1f3-c984e720ad98)
+
+  - Eg setup:
+    . Create 5 Vm -> install Hadoop in all 6 -> Config one of them as **Master** Remaining 4 as **Slave** (Master need more RAM and all), 1 Machine as Client (**edge Node**) for communicate with Master as a user (for avoid direct interaction)
+
+Flow:
+-----
+  - EXT(local file system) -> hdfs command (from Edge Node) -> request API -> Master Node -> Metadata creation about the req details (File stored in EXT) -> 
+
+  - Note:
+    . Block default size 128MB in hadoop version >= 2
+    . Store the 1GB file into blocks like 1024/128 => MB of partitions.
+    . The data will also replicate in the other Nodes also for fault tolerence.
+    . 1 node will have default 3 replicas, same replica partition will not in single node
+    . **RackAwareness Algotithm** responsible for where to store the replica file in HDFS.
+    .  
+
+
+
+
+
+    
+
+
 
 
 
