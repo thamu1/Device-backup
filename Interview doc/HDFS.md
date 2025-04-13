@@ -70,9 +70,36 @@ Flow:
     . The data will also replicate in the other Nodes also for fault tolerence.
     . 1 node will have default 3 replicas, same replica partition will not in single node
     . **RackAwareness Algotithm** responsible for where to store the replica file in HDFS.
-    .  
+    . Heart beat communication: every 3 minute each worker node will send msg to master that he is alive.
+    
+Failures:
+----------
+  - Software and Network : temporary
+  - Hardware : permenant
 
+Failover:
+---------
+  - Hadoop failover ensure Hadoop HDFS NameNode High availability.
+  - If any DataNode failed, the NameNode try to replicate the copies into other Node or Once new node attached to the Hadoop It will replicate the data to new node.
+  - Automatic Failover achieved by **ZooKeeper**.
+  - For Temporary Failure, In Hadoop > 2 We have Active Node and Passive Node (By Zookeeper). If active node failed the Passive take over the Active node work.
+  - Hadoop > 2 provides **High availability** achieved by Zookeeper(Leader & follower architecture).
 
+Types of Node in Hadoop - 2:
+----------------------------
+  - Active Master Node: Active NameNode + Active Resource Manager
+  - Passive Master Node: Passive NameNode + Passive Resource Manager
+  - Secondary Node (if passive node not available)
+  - ZooKeeper Node(Quorm)
+  - Journal Node
+
+Types Of cluster:
+-----------------
+  - Single Node or Psudo
+  - Distributed Cluster
+    . Hadoop < 2 : 1 Name Node + 1 Secondary, can have N slave Node. Minimun 5 required
+    . Hadoop >= v2 : 1 Name Node + 1 Passive/Secondary + 1 or 2 Zookeeper + 1 or 2 Journal Node  + N Slave. Minimum 7 required
+    
 
 
 
